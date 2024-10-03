@@ -13,4 +13,14 @@
         <url-pattern>/my-calculator</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>TempConverter</servlet-name>
+        <servlet-class>edu.kirkwood.java2ee_demo.TempConverter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TempConverter</servlet-name>
+        <url-pattern>/temp-converter</url-pattern>
+    </servlet-mapping>
+
 </web-app>
