@@ -1,0 +1,96 @@
+/* Sci-Fi Web Style */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 50%;   /* Set width to 50% of the viewport */
+    min-height: 50%;  /* Set height to 50% of the viewport */
+    z-index: -1;      /* Keep the video behind the content */
+    opacity: 0.2;     /* Set opacity to 20% */
+    object-fit: cover; /* Ensure the video scales properly */
+}
+
+
+@font-face {
+    font-family: 'SciFiFont';
+    src: url('fonts/Camcode Free.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(0, 0, 0); /* Slight transparency to blend with video */
+    color: #00ff99;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SciFiFont', sans-serif;  /* Apply the custom font */
+    font-size: 12px;
+    position: relative;  /* Make the body a stacking context */
+    z-index: 1;          /* Ensure content stays above the video */
+}
+
+/* Sci-fi glitch effect for h1 */
+h1 {
+    color: #00ff99;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 30px;  /* Add some spacing below the title */
+    text-shadow: 0 0 10px #00ff99;
+    z-index: 2;  /* Ensure it appears above the video */
+}
+
+/* Styling for list and buttons */
+ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #00ff99;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;  /* Arrange items vertically */
+    align-items: center;     /* Center the list items */
+    background-color: rgba(13, 13, 13, 0.9); /* Add background to make the list stand out */
+    z-index: 2;  /* Ensure the list appears above the video */
+}
+
+ul li {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+ul li ul li a {
+    color: #00ff99;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 250px; /* Consistent button width */
+    border: 2px solid #00ff99;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+ul li ul li a:hover {
+    background-color: #00ff99;
+    color: #0d0d0d;
+    box-shadow: 0 0 30px #00ff99, 0 0 50px #00ff99;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #0d0d0d;
+    border-top: 2px solid #00ff99;
+    box-shadow: 0 -5px 15px rgba(0, 255, 153, 0.5);
+    text-align: center;
+    z-index: 2;  /* Ensure footer is above the video */
+}
