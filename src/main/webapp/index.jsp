@@ -18,6 +18,7 @@
             <li><a href="temp-converter">Temp Converter</a></li>
             <li><a href="fraction">Fraction Calculator</a></li>
             <li><a href="volume">Circle and Cylinder</a></li>
+            <li><a href="MeterToFoot">Meter to feet</a></li>
         </ul>
     </li>
 </ul>
